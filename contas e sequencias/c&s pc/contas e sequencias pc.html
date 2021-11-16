@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> C & S  p</title>
+    <style>
+    /**
+   ####    #####    #####
+  ##  ##  ##   ##  ##   ##
+ ##       #        #
+ ##        #####    #####
+ ##            ##       ##
+  ##  ##  ##   ##  ##   ##
+   ####    #####    #####
+    **/
+    body 
+    {background-color:  #3735e7;
+    color: black;
+    font: 20pt Rockwell;}
+
+    header 
+    {font-style: oblique;
+    font: Arialblack;
+    text-align: center;}
+
+    section#sec11
+    {background-color: rgb(174, 0, 255);
+    float: left;
+    border-radius: 20px;
+    padding: 20px;
+    width: 500px;
+    box-shadow: 6px 6px 12px rgb(0, 0, 0);}
+
+    section#sec2
+    {background-color: rgb(255, 145, 0);
+    float: right;
+    border-radius: 20px;
+    padding: 20px;
+    width: 500px;
+    box-shadow: 6px 6px 12px rgb(0, 0, 0);}
+
+    section#sec3 {
+    background-color: rgb(255, 145, 0);
+    box-shadow: 6px 6px 12px rgb(0, 0, 0);
+    float: left;
+    width: 500px;
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 30px;}
+
+    section#sec4 {
+    background-color: rgb(174, 0, 255);
+    float: right;
+    margin-top: 30px;
+    width: 500px;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 6px 6px 12px rgb(0, 0, 0);}
+    
+    section#sec5 {
+    background-color: rgb(255, 145, 0);
+    float: left;
+    width: 500px;
+    padding: 20px;
+    box-shadow: 6px 6px 12px rgb(0, 0, 0);
+    border-radius: 12px;
+    margin-top: 50px;
+    }
+
+    section#sec6 {
+        background-color: rgb(174, 0, 255);
+        float: left;
+        width: 500px;
+        padding: 40px;
+        box-shadow: 6px 6px 12px rgb(0, 0, 0);
+        border-radius: 12px;
+        margin-top: 30px;
+        margin-left: 220px;
+        }
+
+    section#sec7 {
+        background-color: transparent;
+        float: right;
+        width: 50px;
+        padding: 85px;
+        margin-top: 100px;
+        margin-left: 100px;
+        text-align: right;
+        font: 10pt;
+    }
+    
+    footer 
+    {font-style: italic;
+    font: 5pt;}
+
+    div {font: 10px;}
+
+    input {
+        background: transparent;
+        border-style:solid;
+        border-color: rgb(0, 0, 0);
+        border-radius: 12px;
+        }
+  
+
+    select {
+        background: transparent;
+        border-radius: 12px;}
+
+    select#selnp {
+        border: transparent;
+        background-color: transparent;}
+
+    ::-webkit-scrollbar {
+        background-color:  #413eeb00;
+        width: 10px;
+        border-radius: 12px;}
+
+    ::-webkit-scrollbar-thumb {
+        border-radius: 20px; 
+        background-color: black;
+        width: 1px;}
+
+    ::-webkit-scrollbar-button {
+        border-radius: 20px;
+        color: whitesmoke;}
+
+        option {
+            background-color: rgba(0, 0, 0, 0);
+            border-radius: 12px;
+            font-size: 15px;}
+    
+    </style>
+</head>
+<body>
+  
+    <!--
+    ##   ##  ######   ##   ##  ####
+    ##   ##  # ## #   ### ###   ##
+    ##   ##    ##     #######   ##
+    #######    ##     #######   ##
+    ##   ##    ##     ## # ##   ##   #
+    ##   ##    ##     ##   ##   ##  ##
+    ##   ##   ####    ##   ##  #######
+    -->
+
+
+    <header id='hea1'>
+        <h1 id='titulo'>
+            Contas e Sequências
+        </h1>
+    </header>    
+
+    <section id='sec11'>
+        <div id='div1tab'>
+            <p>
+                <strong>MULTIPLICAÇÃO</strong>
+            </p>
+            <p>
+                Número: <input type="number" name="tab" id="iptab"> <input type="button" value="Gerar Tabuada" onclick="tab()">
+            </p>
+        </div>
+        
+        <div id='selectab'>
+            <select name="selec" id="seltab" size='15'>
+                <option>Digite algum número acima</option>
+            </select>
+        </div>
+
+        <div id='multiplicar'>
+            <p id='tit'>Multiplicar</p>
+            <input type="number" name="mult1" id="mult"> x <input type="number" name="mult3" id="multpli"> <input type="button" value="multiplicar" onclick="mult()">
+            <p id='resto'> </p>
+        </div>
+
+    </section>
+
+    <section id='sec2'>
+        <div id='divisao'>
+            <p>
+                <strong>
+                    DIVISÃO
+                </strong>
+            </p>
+            
+            <p>
+            Número: <input type="number" name="divis1" id="div800"> <input type="button" value="Dividir" onclick="divsao()">
+            </p>
+        </div>
+
+        
+        <div id='dividir'>
+            <select name="selec3" id="selec4" size='15'>
+                <option>Digite algum número acima e divida!</option>
+            </select>
+        </div>
+
+        <div id='div6'>
+            <p>Dividir</p>
+               <input type="number" name="inputdiv1" id="ipdiv"> : <input type="number" name="inputdiv3" id="ipdivs"> <input type="button" value="Dividir" onclick="divisao()">
+            <p id='res2'>Coloque algum número no quadro e divida!</p>
+        </div>
+
+    </section>
+
+    <section id='sec3'>
+        <div id='adicao'>
+           <p>
+               <strong>
+                   ADIÇÃO
+               </strong>
+           </p>
+           
+            <p>
+            Número: <input type="number" name="ipa1" id="ipa"> <input type="button" value="Adicionar" onclick="adic()">
+            </p>
+        </div>
+
+        <di id='div8'>
+            <select name="selec5" id="selec6" size='15'>
+                <option>Digite algum número acima e adicione!</option>
+            </select>
+        </div>
+
+        <div id='div9'>
+            <p>Adicionar</p>
+                <input type="number" name="ipa3" id="ipa4"> + <input type="number" name="ipa5" id="ipa6"> <input type="button" value="Adicionar" onclick="adi()">
+            <p id='res3'> Digite algum número acima e some</p>
+        </div>
+    </section>
+
+    <section id='sec4'>
+       
+        <div id='div10'> 
+            <p>
+                <strong>
+                    SUBITRAÇÃO
+                </strong>
+            </p>
+            
+            <p>
+            Número: <input type="number" name="ips1" id="ips2"> <input type="button" value="Subtrair" onclick="sub()">
+            </p>
+        </div>
+
+        <div id='div11'>
+            <select name="selec7" id="selec8" size="15">
+                <option>Digite algum número acima e subtraia!</option>
+            </select>
+        </div>
+
+        <div id='div12'>
+            <p>Subitrair</p>
+                <input type="number" name="ips3" id="ips4"> - <input type="number" name="ips5" id="ips6"> <input type="button" value="Adicionar" onclick="subi()">
+            <p id='res4'> Digite algum número acima e subtraia</p>
+        </div>
+    </section>
+
+    <section id='sec5'>
+        <h1>
+            <strong>
+            SEQUÊNCIAS
+            </strong>
+        </h1>
+
+        <div id='dados'>
+            <p>
+                Inicio: <input type="number" name="inicio1" id="ini"> 
+            </p>
+
+            <p>
+                Fim: <input type="number" name="fim1" id="fim">
+            </p>
+
+            <p>
+                Passo: <input type="number" name="passo" id="passo">
+            </p>
+
+            <p>
+                <input type="button" value="contar" onclick="contar()">
+            </p>
+        </div>
+
+        <div id='resse'>
+           
+        </div>
+    </section>
+
+    <section id='sec6'>
+            <h1>
+                <strong>
+                    NÚMEROS PRIMOS
+                </strong>
+            </h1>
+        
+            <p>
+                Número: <input type="number" name="np1" id="np2"> <input type="button" value="verificar" onclick="ver()">
+                Resultado: <div id=nprimores>   </div>
+            </p>
+
+            <div>
+                <p>
+                Inicio: <input type="number" name="ipini1" id="ipnpi">
+                </p>
+
+                <p>
+                Limite: <input type="number" name="ipli1" id="ipnpl">
+                </p>
+
+                <p>
+                    <input type="button" value="verificar" onclick="clicou()">
+                </p>
+            </div>
+
+            <div id='npfim'>
+                esperando dados
+            </div>
+
+            <div id = npfim2> </div>
+                      
+    </section>
+
+    <section id='sec7'>
+        <div id = 'h/m/s'> </div>
+
+        <div id = 'd/m/a'> </div>
+
+        <div id = 'semana'> </div>
+
+        <footer id='footer1'>
+        &copy; julio
+        </footer>
+    </section>
+
+   
+    <!-- 
+     #####     ####   ######    ####    ######   ######
+    ##   ##   ##  ##   ##  ##    ##      ##  ##  # ## #
+    #        ##        ##  ##    ##      ##  ##    ##
+     #####   ##        #####     ##      #####     ##
+         ##  ##        ## ##     ##      ##        ##
+    ##   ##   ##  ##   ##  ##    ##      ##        ##
+     #####     ####   #### ##   ####    ####      ####
+    -->
+
+
+    <script src="jMULTIPLICACAO.js"></script>
+
+    <script src="jDIVISAO.JS"></script>
+
+    <script src="jADICAO.js"></script>
+
+    <script src="jSUBTRACAO.js"></script>
+
+    <script src="jSEQUENCIAS.js"></script>
+
+    <script src="jNUMEROSPRIMOS.js"></script>
+
+    <script src="jdias.js"></script>   
+
+
+
+
+
+    <! -- 
+    ████████████            
+    ▓▓██                ██▒▒      
+  ██                      ░░██    
+██                          ▒▒░░  
+██                            ██  
+██      ██████        ██████      ▒▒
+██    ▒▒  ████▒▒    ██  ██████    ██
+██    ░░  ██  ██    ██  ██▒▒██    ██
+██    ████████      ██████████    ██
+██        ░░                      ██
+██                              ░░▓▓
+░░▒▒            ████            ██  
+██          ░░████            ██  
+  ██                        ██    
+    ████                  ██      
+        ██              ██        
+          ██░░          ██        
+            ▒▒██        ██        
+                ████    ██        
+                    ████░░██      
+                      ▒▒██████  
+-->
+    
+</script>
+</body>
+</html>

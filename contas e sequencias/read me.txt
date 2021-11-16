@@ -1,0 +1,94 @@
+ 
+ 
+ ######     ##              ######   #######  ######   ##   ##   ####    ##   ##    ##     #####     #####
+ # ## #    ####             # ## #    ##   #   ##  ##  ### ###    ##     ###  ##   ####     ## ##   ##   ##
+   ##     ##  ##              ##      ## #     ##  ##  #######    ##     #### ##  ##  ##    ##  ##  ##   ##
+   ##     ##  ##              ##      ####     #####   #######    ##     ## ####  ##  ##    ##  ##  ##   ##
+   ##     ######              ##      ## #     ## ##   ## # ##    ##     ##  ###  ######    ##  ##  ##   ##
+   ##     ##  ##              ##      ##   #   ##  ##  ##   ##    ##     ##   ##  ##  ##    ## ##   ##   ##
+  ####    ##  ##             ####    #######  #### ##  ##   ##   ####    ##   ##  ##  ##   #####     #####
+ 
+ 
+ o numero primo foi uma merda de resolve tive q ve o codigo fonte de uma pagina
+ o resto foi tranquilo
+ a unica coisa e q eu n consigui prota pra cell n faso a minima ideia do pq 
+   
+ 
+ lixinho 
+ var ini = document.getElementById('ipini2')
+    var fim = document.getElementById('ipli2')
+    var repo = document.getElementById('npfim')
+   
+    var divisores = 0
+    
+    var i = Number(ini.value)
+    var f = Number(fim.value)
+    
+    var ehprimo = Boolean
+
+    for (var count = 1; i <= f ;i++ ) {
+    
+        for(var cont=1;cont <= i;cont++) {
+        if ( i % cont == 0 ) {divisores++} 
+    }
+     
+   if ( divisores == 2) {
+       ehprimo = true
+      }
+        if (ehprimo == true) {
+        repo.innerHTML=(` entre ${i} e ${f} existem ${cont} números primos `)
+        }
+    } NUMEROS PRIMOS 
+
+
+
+
+
+
+    function ver() {
+        let numero = parseInt(document.getElementById('np2').value);
+        let respos = document.getElementById('nprimores')
+        let divisores = 0
+     
+        for(let cont=1;cont <= numero;cont++) {
+             if (numero % cont == 0 )
+             divisores++}
+     
+        if ( divisores == 2){
+            respos.innerHTML=('É primo')
+         }
+        
+        else {
+         respos.innerHTML=('Nao É primo')}
+     
+         
+     }
+     
+     function clicou() {
+      
+     
+     }
+
+
+
+
+
+     function prime(){
+        var inicio = parseInt(document.getElementById('inicio').value);
+        var fim = parseInt(document.getElementById('fim').value);
+        var re = document.getElementById('re');
+        var text='';
+        var div;
+      
+        for(var coun=inicio ; coun<=fim ; coun++){
+            div=0;
+            for(var a=1 ; a<=coun ; a++)
+                if(coun % a == 0)
+                    div++;
+      
+            if(div==2)
+                text += coun + '<br />';
+        }
+      
+        re.innerHTML = text;
+      }
